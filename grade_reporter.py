@@ -12,6 +12,16 @@ for score in scores:
     elif score >= 50:
         grade = "C"
     else:
+        grade = "F"
+    print(f"Score: {score} - Grade: {grade}")
+    if score >= 50:
+        pass_count += 1
+    else:
+        fail_count += 1
+
+average = total_score / len(scores)
+print(f"\nNumber passed: {pass_count}")
+print(f"Number failed: {fail_count}")
 
 cat << 'EOF' > bug_hunt.py
 count = 1

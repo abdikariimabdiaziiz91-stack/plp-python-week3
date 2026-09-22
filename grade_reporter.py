@@ -22,13 +22,4 @@ for score in scores:
 average = total_score / len(scores)
 print(f"\nNumber passed: {pass_count}")
 print(f"Number failed: {fail_count}")
-
-cat << 'EOF' > bug_hunt.py
-count = 1
-total = 0
-
-while count <= 5:
-    total = total + count
-    count = count + 1
-
-print("Sum of 1 to 5 is: " + str(total))
+print(f"Average score: {round(average, 1)}")
